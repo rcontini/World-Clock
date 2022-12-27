@@ -1,28 +1,37 @@
 body {
+  font-family: "Montserrat", sans-serif;
   background: rgb(196, 195, 195);
   color: white;
 }
 .container {
   background: rgb(41, 40, 40);
-  display: block;
   margin: 0 auto;
   max-width: 600px;
   border-radius: 10px;
   padding: 30px;
+  margin-top: 60px;
 }
 h1 {
   color: white;
+  font-size: 36px;
+  font-weight: 100;
   text-align: center;
 }
 select {
   display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 .localInfo {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 200;
 }
 footer {
   text-align: center;
+  font-size: 12px;
+  font-weight: 100;
 }
