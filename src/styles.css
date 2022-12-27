@@ -10,10 +10,11 @@ body {
   border-radius: 10px;
   padding: 30px;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 h1 {
   color: white;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 100;
   text-align: center;
 }
@@ -28,7 +29,28 @@ select {
 .localInfo {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 32px;
   font-weight: 200;
+}
+.citiesSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.cities {
+  text-align: center;
+}
+.cities h2 {
+  font-weight: 300;
+}
+.cities .time {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.cities .date {
+  font-weight: 100;
+  margin-bottom: 20px;
 }
 footer {
   text-align: center;
