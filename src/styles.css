@@ -1,10 +1,11 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background: rgb(196, 195, 195);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/645/original/alexandru-vicol-D9FQYwAclwQ-unsplash.jpg?1673012585");
+  background-size: cover;
   color: white;
 }
 .container {
-  background: rgb(41, 40, 40);
+  background: rgba(0, 0, 0, 0.9);
   margin: 0 auto;
   max-width: 600px;
   border-radius: 10px;
