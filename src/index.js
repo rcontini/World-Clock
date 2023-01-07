@@ -63,3 +63,18 @@ function changeCity(event) {
 
 citiesSelect = document.querySelector("#city");
 citiesSelect.addEventListener("change", changeCity);
+
+function currentLocationInfo() {
+  let currentLocation = document.querySelector("#localInfo");
+  let currentTimeZone = moment().tz.guess();
+  let currentCity = currentTimeZone.replace("_", " ")[1];
+  let localCityTime = currentTimeZone.format("h:mm A");
+  let currentDate = currentTimezone.format("dddd, MMMM Do YYYY");
+
+  currentLocation.innerHTML = `<div id="localInfo">
+        It is <span class="localTime">${localCityTime}</span> in
+        <span class="localCity">${currentCity}</span> on <span class="currentDate">${currentDate}</span>
+      </div>`;
+}
+
+currentLocationInfo();
