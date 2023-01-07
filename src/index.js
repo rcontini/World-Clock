@@ -64,19 +64,10 @@ function changeCity(event) {
 citiesSelect = document.querySelector("#city");
 citiesSelect.addEventListener("change", changeCity);
 
-function currentLocationInfo() {
-  let currentTimeZone = moment().tz.guess();
-  let currentCity = currentTimeZone.replace("_", " ")[1];
-  let currentLocation = document.querySelector("#localInfo");
+let currentTimeZone = moment.tz.guess();
+let currentCity = currentTimeZone.replace("_", " ")[1];
+let currentLocation = document.querySelector("#localInfo");
 
-  currentLocation.innerHTML = `<div id="localInfo">
-        It is <span class="localTime">${currentTimeZone.format(
-          "h:mm A"
-        )}</span> in
-        <span class="localCity">${currentCity}</span> on <span class="currentDate">${currentTimeZone.format(
-    "dddd, MMMM Do YYYY"
-  )}</span>
-      </div>`;
-}
-
-currentLocationInfo();
+currentLocation.innerHTML = `It is ${currentTimeZone.format(
+  "h:mm A"
+)} in ${currentCity} on ${currentTimeZone.format("dddd, MMMM Do YYYY")}`;
