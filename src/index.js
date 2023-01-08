@@ -65,7 +65,8 @@ citiesSelect = document.querySelector("#city");
 citiesSelect.addEventListener("change", changeCity);
 
 let currentTimeZone = moment.tz.guess();
-let currentCity = currentTimeZone.replace("_", " ")[1];
+let currentCity = currentTimeZone.replace("_", " ").split("/")[1];
+currentTimeZone = moment().tz(currentTimeZone);
 let currentLocation = document.querySelector("#localInfo");
 
 currentLocation.innerHTML = `It is ${currentTimeZone.format(
