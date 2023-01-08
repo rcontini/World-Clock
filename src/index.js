@@ -58,7 +58,8 @@ function changeCity(event) {
         <span class="localCity">${cityName}</span> on <span class="currentDate">${cityTime.format(
     "dddd, MMMM Do YYYY"
   )}</span>
-      </div>`;
+      </div>
+     <small><a href="index.html"> Reset </a></small>`;
 }
 
 citiesSelect = document.querySelector("#city");
